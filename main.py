@@ -1036,9 +1036,17 @@ d2 = d.copy()
 # print('d:', d, id(d))
 # print('d2:', d2, id(d2))
 
-# print(d['e'])
-value = d.get('a', "Такого ключа не существует")
-print(value)
-item = d.pop('b', "Такого ключа не существует")
-print(item)
-print(d)
+# # print(d['e'])
+# value = d.get('a', "Такого ключа не существует")
+# print(value)
+# item = d.pop('b', "Такого ключа не существует")
+# print(item)
+# print(d)
+
+
+def get_sum(a, b, c, d=1):
+    return a + b + c + d
+
+
+print(get_sum(1, 5, 2, 7))
+print(get_sum(1, 5, 2))
