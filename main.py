@@ -973,13 +973,72 @@
 #     res *= a[i]
 # print("Произведение:", res)
 
-# d = dict()
-# d[1] = input("-> ")
-# d[2] = input("-> ")
-# d[3] = input("-> ")
-# d[4] = input("-> ")
-d = {i: input("-> ") for i in range(1, 5)}
-print(d)
-exclude = int(input("Элемент под каким номером исключить? "))
-del d[exclude]
+# # d = dict()
+# # d[1] = input("-> ")
+# # d[2] = input("-> ")
+# # d[3] = input("-> ")
+# # d[4] = input("-> ")
+# d = {i: input("-> ") for i in range(1, 5)}
+# print(d)
+# exclude = int(input("Элемент под каким номером исключить? "))
+# del d[exclude]
+# print(d)
+
+# myDict = {3: 'x1', 7: 'x2', 5: 'x3', -1: 'x4'}
+# print(len(myDict))
+# print(min(myDict))
+# print(sum(myDict))
+
+# goods = {
+#     '1': ['Core-i3-4330', 9, 4500],
+#     '2': ['Core i5-4670K', 3, 8500],
+#     '3': ['AMD FX-6300', 6, 3700],
+#     '4': ['Pentium 63220', 8, 2100],
+#     '5': ['Core i5-3450', 5, 6400],
+# }
+# for i in goods:
+#     print(i, ") ", goods[i][0], " - ", goods[i][1], "шт. по ", goods[i][2], "руб", sep="")
+#
+# while True:
+#     number = input("№: ")
+#     if number == '0':
+#         break
+#     elif number not in goods:
+#         print("Некорректный номер товара :(")
+#     else:
+#         amount = int(input("Количество: "))
+#         goods[number][1] = amount
+#
+# for i in goods:
+#     print(i, ") ", goods[i][0], " - ", goods[i][1], "шт. по ", goods[i][2], "руб", sep="")
+
+# d = {'a': 1, 'b': 2, 'c': 3}
+#
+# print(d.keys())  # Список ключей
+# print(d.values())  # Список значений
+# print(d.items())  # Список ключей и значений
+#
+# # for i, j in d.items():
+# #     print(i, "->", j)
+#
+# print(list(d.items()))
+
+d = {'a': 1, 'b': 2, 'c': 3}
+
+d2 = d.copy()
+
+# print('d:', d, id(d))
+# print('d2:', d2, id(d2))
+#
+# d2['a'] = 5
+# d['e'] = 7
+#
+# print('d:', d, id(d))
+# print('d2:', d2, id(d2))
+
+# print(d['e'])
+value = d.get('a', "Такого ключа не существует")
+print(value)
+item = d.pop('b', "Такого ключа не существует")
+print(item)
 print(d)
