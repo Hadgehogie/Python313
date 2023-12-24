@@ -1023,9 +1023,9 @@
 #
 # print(list(d.items()))
 
-d = {'a': 1, 'b': 2, 'c': 3}
-
-d2 = d.copy()
+# d = {'a': 1, 'b': 2, 'c': 3}
+#
+# d2 = d.copy()
 
 # print('d:', d, id(d))
 # print('d2:', d2, id(d2))
@@ -1044,9 +1044,135 @@ d2 = d.copy()
 # print(d)
 
 
-def get_sum(a, b, c, d=1):
-    return a + b + c + d
+# def get_sum(a, b, c, d=1):
+#     return a + b + c + d
+#
+#
+# print(get_sum(1, 5, 2, 7))
+# print(get_sum(1, 5, 2))
 
 
-print(get_sum(1, 5, 2, 7))
-print(get_sum(1, 5, 2))
+# data = ['red', 'green', 'blue']
+# num = 1
+# for val in data:
+#     print(num, ')', val, sep='')
+#     num += 1
+#
+# print()
+# for num, val in enumerate(data, 1):
+#     print(num, ')', val, sep='')
+
+# a = [1, 2, 3]
+# b = [*a, 4, 5, 6]
+
+# def summa(*params):
+#     res = 0
+#     for i in params:
+#         res += 1
+#     return res
+#
+#
+# print(summa(1, 2, 3, 4, 5, 6, 7, 8, 9))
+# print(summa(3, 4, 5))
+
+# def func(*args):
+#     midle = sum(args) / len(args)
+#     print(midle)
+#     res = []
+#     for element in args:
+#         if element < midle:
+#             res.append(element)
+#     return res
+#
+#
+# first = func(1, 2, 3, 4, 5, 6, 7, 8, 9)
+# print(first)
+# second = func(3, 6, 1, 9, 5)
+# print(second)
+
+# def print_score(student, *scores):
+#     print("Student Name:", student)
+#     for score in scores:
+#         print(score)
+#
+#
+# print_score("Irina", 5, 4, 3, 2, 5)
+# print_score("Igor", 5, 4, 5, 3, 2, 5)
+# print_score("Lev")
+
+# def func(**kwargs):
+#     return kwargs
+#
+#
+# print(func(a=1, b=2, c=3))
+# print(func())
+# print(func(d=9))
+
+# def intro(**data):
+#     for k, v in data.items():
+#         print(k, '->', v)
+#     print()
+#
+#
+# intro(name="Irina", surname="Rezhnikova", age=22)
+# intro(name="Igor", surname="Berukov", email="igor@mail.ru", age=25, phone="+7(800)555-35-35")
+
+# def db(**kwargs):
+#     my_dict.update(kwargs)
+#     # print("внутри функции: ", id(my_dict)
+#
+#
+# my_dict = {"one", "first"}
+# # print(id(my_dict))
+# db(k1=22, k2=31, k3=11, k4=91)
+# # print(id(my_dict))
+# print(my_dict)
+
+# def func(a, b, c, *args, d, e, **kwargs):
+#     return a, b, c, args, e, kwargs, d
+#
+#
+# print(func(5, 9, 7, 8, 4, 3, 2, 1, k1=22, k2=31, k3=11, k4=91, d=55, e=100))
+
+# name = "Tom"
+# print("Глобальная область видимости вверху: ", id(name))
+#
+#
+# def hi():
+#     name = "Sam"
+#     print("Локальная область видимости: ", id(name))
+#     surname = "Johnson"
+#     print("Hello", name, surname)
+#
+#
+# def bye():
+#     print("Good bye", name)
+#     print("Глобальная область видимости внизу: ", id(name))
+#
+#
+# hi()
+# bye()
+
+# x = 4
+#
+#
+# def add_five(a):
+#     x = 2
+#
+#     def add_some():
+#         print("x =", x)
+#         return a + x
+#
+#     return add_some()
+#
+#
+# print(add_five(5))
+
+
+# import builtins
+#
+# name = dir(builtins)
+#
+# for t in name:
+#     print(t)
+
